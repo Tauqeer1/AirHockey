@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\demoUser.cs" />
      <Compile Include="Assets\Scripts\puck.cs" />
      <Compile Include="Assets\Scripts\puckWallColliding.cs" />
+     <None Include="Assets\Fit All Screen Size\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

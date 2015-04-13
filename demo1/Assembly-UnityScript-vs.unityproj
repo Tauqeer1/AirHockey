@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{4BDE285D-6255-31DD-892D-5E317A962147}</ProjectGuid>
+	<ProjectGuid>{FC1B9B2C-E99B-CF42-842E-D9F90DE880E5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,17 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AIScriptv2.cs" />
-     <Compile Include="Assets\Scripts\AIScriptv3.cs" />
-     <Compile Include="Assets\Scripts\RestartScript.cs" />
-     <Compile Include="Assets\Scripts\UIManagerScript.cs" />
-     <Compile Include="Assets\Scripts\User.cs" />
-     <Compile Include="Assets\Scripts\demo.cs" />
-     <Compile Include="Assets\Scripts\demoAI.cs" />
-     <Compile Include="Assets\Scripts\demoAI1.cs" />
-     <Compile Include="Assets\Scripts\demoUser.cs" />
-     <Compile Include="Assets\Scripts\puck.cs" />
-     <Compile Include="Assets\Scripts\puckWallColliding.cs" />
+     <Compile Include="Assets\Fit All Screen Size\ResolutionFixer.js" />
      <None Include="Assets\Fit All Screen Size\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

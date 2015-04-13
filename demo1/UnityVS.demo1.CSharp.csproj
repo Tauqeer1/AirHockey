@@ -66,5 +66,8 @@
     <Compile Include="Assets\Scripts\puck.cs" />
     <Compile Include="Assets\Scripts\puckWallColliding.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fit All Screen Size\ReadMe.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
