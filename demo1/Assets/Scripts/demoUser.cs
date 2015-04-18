@@ -1,33 +1,95 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class demoUser : MonoBehaviour {
-	
+
+    public Transform table;
+    public Camera camera;
 	public Transform puck;
-	private Vector3 initialPositionOfMallet;
 	float radius1;
 	float radius2;
 	float sumOfRadius;
 	float distance;
 	Vector3 direction;
-	float rayLength =0.5f;
-	Vector3 previousPosition;
-	Vector3 velocity;
+    float maxX;
+    float minX;
+    float minZ;
+    float maxZ;
+    Vector3 center;
+    Vector3 extents;
+    
 
-	void Awake(){
-		previousPosition = this.transform.position;
-	}
+    void Awake()
+    {
+        //ObjectPlacing obj = new ObjectPlacing();
+        
+
+        //maxX = ObjectPlacing.maxX;
+        //minX = ObjectPlacing.minX;
+        //maxZ = ObjectPlacing.maxZ;
+        //minZ = ObjectPlacing.minZ;
+
+
+        //Debug.Log("Max X" + maxX);
+        //Debug.Log("Min X" + minX);
+
+        double cameraAspectRatio = Math.Round(camera.aspect, 2);
+        center = table.GetComponent<Renderer>().bounds.center;
+        extents = table.GetComponent<Renderer>().bounds.extents;
+
+
+        Debug.Log("Camer Aspect Ratio " + cameraAspectRatio);
+
+        if (cameraAspectRatio == 0.75)
+        {
+            Debug.Log("iPad Tall");
+            this.transform.localScale = new Vector3(5.0f, 5.0f, 5.0f);
+            this.transform.position = new Vector3(0, 0.05f, -3.5f);
+            puck.transform.position = new Vector3(0, 0.113f, 0);
+            maxX = center.x + extents.x - 0.6f;
+            minX = center.x - extents.x + 0.6f;
+            maxZ = center.z;
+            minZ = center.z - extents.z + 0.7f;
+
+
+        }
+        else if (cameraAspectRatio == 0.67)
+        {
+            Debug.Log("iPhone Tall");
+            this.transform.localScale = new Vector3(5.0f, 5.0f, 5.0f);
+            this.transform.position = new Vector3(0, 0.05f, -3.5f);
+            maxX = center.x + extents.x - 0.6f;
+            minX = center.x - extents.x + 0.6f;
+            maxZ = (center.z);
+            minZ = center.z - extents.z + 0.7f;
+            Debug.Log("Max Z" + maxZ);
+            Debug.Log("Min Z" + minZ);
+        }
+        else if (cameraAspectRatio == 0.56)
+        {
+            Debug.Log("iPhone 5 Tall");
+            this.transform.localScale = new Vector3(5.0f, 5.0f, 5.0f);
+            this.transform.position = new Vector3(0, 0.05f, -3.5f);
+            maxX = center.x + extents.x - 0.6f;
+            minX = center.x - extents.x + 0.6f;
+            maxZ = center.z;
+            minZ = center.z - extents.z + 0.7f;
+        }
+
+    }
 	// Use this for initialization
 	void Start () {
-		initialPositionOfMallet = new Vector3 (0, 0.08f, -3.44f);
-		this.transform.position = initialPositionOfMallet;
+        
+        //initialPositionOfMallet = new Vector3 (0, 0.08f, -3.44f);
+        //this.transform.position = initialPositionOfMallet;
 	}
 	
 	// Update is called once per frame
 
 	void FixedUpdate(){
 
-		velocity = (this.transform.position - previousPosition) / Time.deltaTime;
+        //velocity = (this.transform.position - previousPosition) / Time.deltaTime;
 
         //Debug.Log(velocity.magnitude);
 
@@ -46,12 +108,9 @@ public class demoUser : MonoBehaviour {
 	}
 
 
-	void OnMouseDrag(){
-		float maxX = 1.76f;
-		float minX = -1.76f;
-		float minZ = -3.59f;
-		float maxZ = -0.39f;
-		//float maxZ = 3.62f;
+	void OnMouseDrag()
+    {
+		
 		float distance_to_screen = Camera.main.WorldToScreenPoint(this.transform.position).z;
 		Vector3 position = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
 		this.transform.position = new Vector3 (position.x, this.transform.position.y, position.z);
@@ -60,7 +119,7 @@ public class demoUser : MonoBehaviour {
 			float xPos =Mathf.Clamp(this.transform.position.x,minX,maxX);
 			float zPos = Mathf.Clamp(this.transform.position.z,minZ,maxZ);
 			this.transform.position=new Vector3(xPos,this.transform.position.y,zPos);
-		}
+	}
 
 	}
 	void OnMouseUp(){

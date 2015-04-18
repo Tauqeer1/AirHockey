@@ -9,3 +9,16 @@ D:\tauqeer\UnityProjects\demo1\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
 D:\tauqeer\UnityProjects\demo1\obj\Debug\UnityVS.demo1.CSharp.csprojResolveAssemblyReference.cache
 D:\tauqeer\UnityProjects\demo1\obj\Debug\Assembly-CSharp.dll
 D:\tauqeer\UnityProjects\demo1\obj\Debug\Assembly-CSharp.pdb
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\obj\Debug\UnityVS.demo1.CSharp.csprojResolveAssemblyReference.cache
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\obj\Debug\Assembly-CSharp.dll
+E:\unityProjects\AirHockeyGame\AirHockey\demo1\obj\Debug\Assembly-CSharp.pdb

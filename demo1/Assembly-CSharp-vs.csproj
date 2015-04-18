@@ -49,6 +49,7 @@
      <Compile Include="Assets\ScaleScript.cs" />
      <Compile Include="Assets\Scripts\AIScriptv2.cs" />
      <Compile Include="Assets\Scripts\AIScriptv3.cs" />
+     <Compile Include="Assets\Scripts\ObjectPlacing.cs" />
      <Compile Include="Assets\Scripts\RestartScript.cs" />
      <Compile Include="Assets\Scripts\UIManagerScript.cs" />
      <Compile Include="Assets\Scripts\User.cs" />
