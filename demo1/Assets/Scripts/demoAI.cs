@@ -81,7 +81,4 @@ public class demoAI : MonoBehaviour
             this.transform.position += -(Vector3.right * 1.0f * Time.deltaTime);
         }
     }
-        
-
-    
 }
