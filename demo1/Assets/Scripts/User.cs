@@ -70,9 +70,8 @@ public class User : MonoBehaviour {
 			//puck.rigidbody.velocity = Vector3.zero;
             if (velocity.magnitude > 2)
             {
-                puck.transform.position = transform.position + velocity.normalized * 
-										Mathf.Clamp(velocity.magnitude, 1, 2) * Mathf.Abs(transform.GetComponent<Renderer>().bounds.extents.y * 1
-					                  + puck.transform.GetComponent<Renderer>().bounds.extents.z * 1) * 1.5f;
+                puck.transform.position = 
+                    transform.position + velocity.normalized * Mathf.Clamp(velocity.magnitude, 1, 2) * Mathf.Abs(transform.GetComponent<Renderer>().bounds.extents.y * 1 + puck.transform.GetComponent<Renderer>().bounds.extents.z * 1) * 1.5f;
             }
 
             if (!detectionDisabled)
